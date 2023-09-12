@@ -59,12 +59,12 @@ Any form of plagiarism is strictly forbidden and will result in removal from the
 Write a program that prints _putchar, followed by a new line.
 
 * The program should return 0
-~~
+~~~
 julien@ubuntu:~/0x02$  gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-putchar.c -o 0-putchar
 julien@ubuntu:~/0x02$ ./0-putchar
 _putchar
 julien@ubuntu:~/0x02$
-~~
+~~~
 Repo:
 
 GitHub repository: `alx-low_level_programming`
@@ -78,7 +78,7 @@ Write a function that prints the alphabet, in lowercase, followed by a new line.
 * Prototype: void print_alphabet(void);
 * You can only use _putchar twice in your code
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 1-main.c
 #include "main.h"
 
@@ -96,7 +96,7 @@ julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 
 julien@ubuntu:~/0x02$ ./1-alphabet
 abcdefghijklmnopqrstuvwxyz
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -111,7 +111,7 @@ Write a function that prints 10 times the alphabet, in lowercase, followed by a 
 * Prototype: void print_alphabet_x10(void);
 * You can only use _putchar twice in your code
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 2-main.c
 #include "main.h"
 
@@ -138,7 +138,7 @@ abcdefghijklmnopqrstuvwxyz
 abcdefghijklmnopqrstuvwxyz
 abcdefghijklmnopqrstuvwxyz
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -155,7 +155,7 @@ Write a function that checks for lowercase character.
 * Returns `0` otherwise
 FYI: The standard library provides a similar function: `islower`. Run `man islower` to learn more.
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 3-main.c
 #include "main.h"
 
@@ -181,7 +181,7 @@ julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 
 julien@ubuntu:~/0x02$ ./3-islower
 011
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -193,12 +193,12 @@ File: `3-islower.c`
 ### mandatory
 Write a function that checks for alphabetic character.
 
-Prototype: `int _isalpha(int c);`
-Returns `1` if c is a letter, lowercase or uppercase
-Returns `0` otherwise
-FYI: The standard library provides a similar function: `isalpha.` Run `man isalpha` to learn more.
+* Prototype: `int _isalpha(int c);`
+* Returns `1` if c is a letter, lowercase or uppercase
+* Returns `0` otherwise
+* FYI: The standard library provides a similar function: `isalpha.` Run `man isalpha` to learn more.
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 4-main.c
 #include "main.h"
 
@@ -226,7 +226,7 @@ julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 
 julien@ubuntu:~/0x02$ ./4-isalpha
 1110
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -243,7 +243,7 @@ Write a function that prints the sign of a number.
 * Returns `0` and prints `0` if `n` is zero
 * Returns `-1` and prints `-` if `n` is less than zero
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 5-main.c
 #include "main.h"
 
@@ -286,7 +286,7 @@ julien@ubuntu:~/0x02$ ./5-sign
 -, /
 julien@ubuntu:~/0x02$
 
-~~
+~~~
 Repo:
 
 GitHub repository: `alx-low_level_programming`
@@ -300,7 +300,7 @@ Write a function that computes the absolute value of an integer.
 * Prototype: `int _abs(int);`
 * FYI: The standard library provides a similar function: `abs.` Run `man abs` to learn more.
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 6-main.c
 #include "main.h"
 #include <stdio.h>
@@ -331,7 +331,7 @@ julien@ubuntu:~/0x02$ ./6-abs
 1
 98
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -346,7 +346,7 @@ Write a function that prints the last digit of a number.
 * Prototype: `int print_last_digit(int);`
 * Returns the value of the last digit
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 7-main.c
 #include "main.h"
 
@@ -370,7 +370,7 @@ julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 
 julien@ubuntu:~/0x02$ ./7-last_digit
 8044
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -385,7 +385,7 @@ Write a function that prints every minute of the day of Jack Bauer, starting fro
 * Prototype: `void jack_bauer(void);`
 * You can listen to `this soundtrack` while coding :)
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 8-main.c
 #include "main.h"
 
@@ -425,7 +425,7 @@ julien@ubuntu:~/0x02$ ./8-24 | tail
 julien@ubuntu:~/0x02$ ./8-24 | wc -l
 1440
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -440,7 +440,7 @@ Write a function that prints the 9 times table, starting with 0.
 * Prototype: `void times_table(void);`
 * Format: see example
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 9-main.c
 #include "main.h"
 
@@ -478,7 +478,7 @@ julien@ubuntu:~/0x02$ ./9-times_table | tr ' ' . | cat -e
 0,..8,.16,.24,.32,.40,.48,.56,.64,.72$
 0,..9,.18,.27,.36,.45,.54,.63,.72,.81$
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -492,7 +492,7 @@ Write a function that adds two integers and returns the result.
 
 * Prototype: int add(int, int);
 
-~~
+~~~
 julien@ubuntu:~/$ cat 10-main.c
 #include "main.h"
 #include <stdio.h>
@@ -514,7 +514,7 @@ julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 
 julien@ubuntu:~/0x02$ ./10-add
 98
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -533,7 +533,7 @@ Write a function that prints all natural numbers from n to 98, followed by a new
 * The last printed number should be `98`
 * You are allowed to use the standard library
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 11-main.c
 #include "main.h"
 
@@ -559,7 +559,7 @@ julien@ubuntu:~/0x02$ ./11-98
 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
 -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
@@ -576,7 +576,7 @@ Write a function that prints the n times table, starting with 0.
 * If `n` is greater than `15` or less than `0` the function should not print anything
 * Format: see example
 
-~~
+~~~
 julien@ubuntu:~/0x02$ cat 100-main.c
 #include "main.h"
 
@@ -652,7 +652,7 @@ $
 0,..11,..22,..33,..44,..55,..66,..77,..88,..99,.110,.121,.132$
 0,..12,..24,..36,..48,..60,..72,..84,..96,.108,.120,.132,.144$
 julien@ubuntu:~/0x02$
-~~
+~~~
 
 Repo:
 
