@@ -43,4 +43,3 @@ Any form of plagiarism is strictly forbidden and will result in removal from the
 
 ## More Info
 You do not have to understand the call by reference (address), stack, static variables, recursions or arrays, yet.
-
