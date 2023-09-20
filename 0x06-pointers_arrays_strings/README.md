@@ -8,3 +8,16 @@
 * **5-string_toupper.c:** function that changes all lowercase letters of a string to uppercase.
 * **6-cap_string.c:** function that capitalizes all words of a string.
 * **7-leet.c:** function that encodes a string into [1337](https://intranet.hbtn.io/rltoken/HDZQ5imXboSDnMXO9P0-Tg "1337")
+* **100-rot13.c** function that encodes a string using [rot13](https://intranet.hbtn.io/rltoken/IFaBd0QrK-h50gV7IoW9iQ "rot13").
+* **101-print_number.c** function that prints an integer.
+* **102-magic.c: ** exercise about pointers.
+* **103-infinite_add.c
+* **104-print_buffer.c
+
+---------------------------------------------------------------------------------
+------------
+####  Compilation
+
+To compile the file remember to use gcc 4.8or above by typing:
+
+`gcc -Wall -pedantic -Werror -Wextra <mainfile.c> <function.c> -o <executable file>`
