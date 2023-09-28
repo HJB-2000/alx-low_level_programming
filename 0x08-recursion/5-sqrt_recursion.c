@@ -6,17 +6,15 @@
  * @guess: The current estimation for the square root.
  *
  * Return: The natural square root of 'n'. If 'n' does not have a natural
- * square root, returns -1.
+ *         square root, returns -1.
  */
 int _sqrt_helper(int n, int guess);
 
 /**
- * _sqrt_recursion - Computes the square
-root of a given number using recursion.
- * @n: The numeric value for which the square root is being determined.
- *
- * Return: The square root of 'n' if it exists
-naturally; otherwise, it returns -1.
+*_sqrt_recursion-Computes the squareroot of a given number using recursion.
+* @n: The numeric value for which the square root is being determined.
+*
+*Return:The square root of 'n' if it existsnaturally;otherwise,it returns -1.
  */
 int _sqrt_recursion(int n)
 {
@@ -38,7 +36,7 @@ int _sqrt_recursion(int n)
  * @guess: The current estimation for the square root.
  *
  * Return: The natural square root of 'n'. If 'n' does not have a natural
- * square root, returns -1.
+ *         square root, returns -1.
  */
 int _sqrt_helper(int n, int guess)
 {
