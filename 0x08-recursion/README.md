@@ -3,11 +3,11 @@
 ## Resources
 
 - Read or watch:
-  - [0x08. Recursion, introduction](https://alx-intranet.hbtn.io/rltoken/XAgxh_Fs0BNWMziT4eLpTg)
-  - [What on Earth is Recursion?](https://alx-intranet.hbtn.io/rltoken/eV9MEryXYCJ0y-j2_vdoeA)
-  - [C - Recursion](https://alx-intranet.hbtn.io/rltoken/WkKrKzHzkSRRtuu5io2O7A)
-  - [C Programming Tutorial 85, Recursion pt.1](https://alx-intranet.hbtn.io/rltoken/0xplkxwda-YgkGIL-TUHPQ)
-  - [C Programming Tutorial 86, Recursion pt.2](https://alx-intranet.hbtn.io/rltoken/PluKIs2CtIKqWRjUPaXa0A)
+  - [0x08. Recursion, introduction](https://intranet.alxswe.com/rltoken/dzZB83Hm3lO7dScjhebAxw)
+  - [What on Earth is Recursion?](https://intranet.alxswe.com/rltoken/xYjKl3024oN58Bi_621_vQ)
+  - [C - Recursion](https://intranet.alxswe.com/rltoken/u4ojc5CZpf4qiuQvmXCiOA)
+  - [C Programming Tutorial 85, Recursion pt.1](https://intranet.alxswe.com/rltoken/Wv-wffgpXelN9ZTrbmiOyA)
+  - [C Programming Tutorial 86, Recursion pt.2](https://intranet.alxswe.com/rltoken/7GVdI-KT-M1vOIzwEjSahQ)
 
 ## Tasks
 
@@ -110,6 +110,28 @@ Write a function that returns the natural square root of a number.
 Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
 
 - Prototype: `int is_prime_number(int n);`
+-----------------------------------------------------
+## Task 7: They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything
+### Advanced
+
+Write a function that returns `1` if a string is a palindrome and `0` if it is not.
+
+**Prototype:** `int is_palindrome(char *s);`
+
+- An empty string is considered a palindrome.
+
+---
+
+## Task 8: Inception. Now, before you bother telling me it's impossible...
+### Advanced
+
+Write a function that compares two strings and returns `1` if the strings can be considered identical, otherwise return `0`.
+
+**Prototype:** `int wildcmp(char *s1, char *s2);`
+
+- `s2` can contain the special character `*`.
+- The special character `*` can replace any string (including an empty string).
+
 ---------------------------------------------------------------------------------------------
 ## "main.c files to test codes"==>contain files to test codes of evry tasks
 ## results.txt ==> for how the codes should work 

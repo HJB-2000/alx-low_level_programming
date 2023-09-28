@@ -40,3 +40,27 @@ julien@ubuntu:~/0x08. Recursion$ ./5-sqrt
 -1
 5
 -1
+
+100--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-is_palindrome.c -o 100-palindrome
+julien@ubuntu:~/0x08. Recursion$ ./100-palindrome 
+1
+1
+0
+1
+
+101--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-wildcmp.c -o 101-wildcmp
+julien@ubuntu:~/0x08. Recursion$ ./101-wildcmp 
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+0
