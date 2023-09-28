@@ -9,16 +9,16 @@
 
 void _puts_recursion(char *s)
 {
-	/* Check if the current character is the null terminator (end of the string) */
+/*Check if the current character is the null terminator (end of the string)*/
 	if (*s == 0)
 	{
- 	/* If it is, print a newline character and return */
+/*If it is, print a newline character and return*/
 		_putchar('\n');
 		return;
 	}
-	/* Print the current character */
+/*Print the current character*/
 	_putchar(*s);
-	/* Move to the next character in the string and continue the recursion */
+/*Move to the next character in the string and continue the recursion*/
 	_puts_recursion(s + 1);
 }
 
