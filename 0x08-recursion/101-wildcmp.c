@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * wildcmp - Compare two strings to determine if they are identical.
