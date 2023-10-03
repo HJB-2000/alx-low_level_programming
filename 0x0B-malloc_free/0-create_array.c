@@ -4,6 +4,7 @@
 
 
 /**
+ * create_array - Entry point
  * creates_an_array_of_chars -nitializes it with a specific char.
  * @si: size of the array
  * @ch: character

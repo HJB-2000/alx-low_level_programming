@@ -5,11 +5,12 @@
 
 
 /**
- * alloc_grid -3-alloc_grid.c: Create a 2D integer array
+ * alloc_grid - Entry point
+ * alloc_grid: Create a 2D integer array
  * @width: Number of rows
  * @height: Number of columns
  *
- * Returns: Pointer to a 2D array or NULL on failure
+ * Return: Pointer to a 2D array or NULL on failure
  */
 
 
