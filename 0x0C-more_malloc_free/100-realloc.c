@@ -18,20 +18,20 @@
  * initialized.
  *
  * Return:
- * - On success, a pointer to the reallocated memory block is returned.
- * - If @ptr is NULL, the call is equivalent to malloc(@new_size), and a pointer
+ * -On success, a pointer to the reallocated memory block is returned.
+ * -If @ptr is NULL, the call is equivalent to malloc(@new_size), and a pointer
  *   to the newly allocated memory is returned.
- * - If @new_size is zero, and @ptr is not NULL, the call is equivalent to
+ * -If @new_size is zero, and @ptr is not NULL, the call is equivalent to
  *   free(@ptr), and NULL is returned.
- * - If @new_size equals @old_size, no reallocation is performed, and @ptr is
+ * -If @new_size equals @old_size, no reallocation is performed, and @ptr is
  *   returned unchanged.
- * - If memory allocation using malloc fails, NULL is returned, and @ptr remains
+ * -If memory allocation using malloc fails, NULL is returned, and @ptr remains
  *   unchanged.
  *
  * Note:
- * - The caller is responsible for freeing the memory allocated by this function
+ * -The caller is responsible for freeing the memory allocated by this function
  *   using free() when it is no longer needed to avoid memory leaks.
- * - The function provides similar functionality to the standard library realloc
+ * -The function provides similar functionality to the standard library realloc
  *   function but with added conditions for handling edge cases.
  */
 
