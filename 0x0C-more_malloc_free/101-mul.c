@@ -15,10 +15,10 @@ int isAllDigits(char *str)
 	while (str[i])
 	{
 		if (!isdigit(str[i]))
-			return 1;
+			return (1);
 		i++;
 	}
-	return 0;
+	return (0);
 }
 
 /**
@@ -41,7 +41,7 @@ int customAtoi(char *s)
 		}
 		i++;
 	}
-	return result;
+	return (result);
 }
 
 /**
@@ -58,17 +58,17 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return 98;
+		return (98);
 	}
 
 	if (isAllDigits(argv[1]) || isAllDigits(argv[2]))
 	{
 		printf("Error\n");
-		return 98;
+		return (98);
 	}
 
 	result = customAtoi(argv[1]) * customAtoi(argv[2]);
 	printf("%d\n", result);
 
-	return 0;
+	return (0);
 }
