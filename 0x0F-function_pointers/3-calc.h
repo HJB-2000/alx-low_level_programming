@@ -8,15 +8,15 @@
  *   and its associated function.
  * @op: The operator symbol.
  * @f: A pointer to the associated function.
- */
+*/
 
 
 
 typedef struct op
 {
-    char *op;
-    int (*f)(int a, int b);
-} op_t;
+	char *op;
+	int (*f)(int a, int b);
+}	op_t;
 
 
 /*Function pointer declaration for dynamic operator selection*/
