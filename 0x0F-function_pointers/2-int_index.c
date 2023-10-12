@@ -18,7 +18,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 int index = 0;
 
-index = (array == NULL || cmp == NULL) ? -1 : index;
+if (array == NULL || cmp == NULL)
+return (-1);
 
 for (; index < size; index++)
 {
