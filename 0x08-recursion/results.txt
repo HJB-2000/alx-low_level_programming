@@ -1,0 +1,66 @@
+1--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+julien@ubuntu:~/0x08. Recursion$ ./0-puts_recursion 
+Puts with recursion
+
+2--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-print_rev_recursion.c -o 1-print_rev_recursion
+julien@ubuntu:~/0x08. Recursion$ ./1-print_rev_recursion 
+reklaW notloC
+
+3--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89  2-main.c 2-strlen_recursion.c -o 2-strlen_recursion
+julien@ubuntu:~/0x08. Recursion$ ./2-strlen_recursion 
+14
+
+4--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-factorial.c -o 3-factorial
+julien@ubuntu:~/0x08. Recursion$ ./3-factorial 
+1
+120
+3628800
+-1
+
+5--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-pow_recursion.c -o 4-pow
+julien@ubuntu:~/0x08. Recursion$ ./4-pow 
+1
+1
+65536
+25
+-1
+-125
+
+6--
+julien@ubuntu:~/0x08. gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-sqrt_recursion.c -o 5-sqrt
+julien@ubuntu:~/0x08. Recursion$ ./5-sqrt 
+1
+32
+4
+-1
+5
+-1
+
+100--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-is_palindrome.c -o 100-palindrome
+julien@ubuntu:~/0x08. Recursion$ ./100-palindrome 
+1
+1
+0
+1
+
+101--
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-wildcmp.c -o 101-wildcmp
+julien@ubuntu:~/0x08. Recursion$ ./101-wildcmp 
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+0
