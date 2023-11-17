@@ -6,8 +6,8 @@
  * @_size: Type indicator for the casting operation.
  *
  * This function performs typecasting on the given number
- * based on the specified size. The result is the casted value
- * of num according to the indicated type.
+ *   based on the specified
+ * size. The result is the casted value of num according to the indicated type.
  *
  * Return: The casted value of num.
  */
