@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * hhh - Print  string before the main .
+ * hh - Print  string before the main .
  */
-void __attribute__((constructor)) hhh(void)
-void hhh(void)
+void __attribute__((constructor)) hh(void)
+void hh(void)
 {
 printf("You're beat! and yet, you must allow,\n"
 "I bore my house upon my back!\n");
