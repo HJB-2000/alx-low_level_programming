@@ -17,64 +17,14 @@
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *new_node;
+	listint_t *new = malloc(sizeof(listint_t));
 
-	new_node = malloc(sizeof(listint_t));
-
-	if (!head)
-	{
+	if (new == NULL)
 		return (NULL);
-	}
-	if (!new_node)
-	{
-		return (NULL);
-	}
-	new_node->n = n;
-	new_node->next = NULL;
 
-	if (*head == NULL)
-	{
-		*head = new_node;
-	}
-	else
-	{
-		listint_t *current = *head;
+	new->n = n;
+	new->next = *head;
+	*head = new;
 
-		while (current->next != NULL)
-		{
-			current = current->next;
-		}
-
-		current->next = new_node;
-	}
-
-	return (new_node);
-}
-/**
- * reverse_and_print_list - reverses a listint_t linked list and prints it
- * @head: pointer to the head of the list
- *
- * Description: This function reverses the linked list in-place and then prints
- * each element in the reversed order.
- */
-void reverse_and_print_list(listint_t *head)
-{
-	listint_t *prev = NULL;
-	listint_t *current = head;
-	listint_t *next = NULL;
-
-	while (current != NULL)
-	{
-		next = current->next;
-		current->next = prev;
-		prev = current;
-		current = next;
-	}
-	head = prev;
-
-	while (head != NULL)
-	{
-		printf("%d\n", head->n);
-		head = head->next;
-	}
+	return (new);
 }
