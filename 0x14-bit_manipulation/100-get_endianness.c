@@ -1,20 +1,18 @@
 #include "main.h"
 
 /**
- * get_endianness - Checks the endianness of the system.
+ * get_endianness - checks the endianness of the system
  *
- * Return:
- *   If little-endian - 1
- *   If big-endian - 0
+ * Return: 0 if big endian, 1 if little endian
  */
 int get_endianness(void)
 {
-	unsigned int num = 1;
-
-	/* Use bitwise AND to check the least significant byte */
-	if (*(char *)&num)
-		return (1); /* System is little-endian */
-	else
-		return (0); /* System is big-endian */
+  unsigned int num = 1;
+  char *endianCheck = (char *)&num;
+  
+  if (*endianCheck)
+    return 1; /* Little Endian */
+  else
+    return 0; /* Big Endian */
 }
 
