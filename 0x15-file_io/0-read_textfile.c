@@ -11,39 +11,41 @@
 * Return: The actual number of letters read and printed, 0 otherwise.
 */
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t file, let, w, total_written = 0;
-	char *text;
+	ssize_t f, a, b;
+	char *t;
 
+	t = malloc(letters);
+	if (t == NULL)
+		return (0);
 	if (filename == NULL)
-		return (0);
-
-	text = malloc(letters);
-	if (text == NULL)
-		return (0);
-
-	file = open(filename, O_RDONLY);
-	if (file == -1)
 	{
-		free(text);
+		free(t);
 		return (0);
 	}
-
-	while ((let = read(file, text, letters)) > 0)
+	f = open(filename, O_RDONLY);
+	if (f == -1)
 	{
-		w = write(STDOUT_FILENO, text, let);
-		if (w == -1)
-		{
-			free(text);
-			close(file);
-			return (0);
-		}
-		total_written += w;
+		free(t);
+		return (0);
 	}
-
-	close(file);
-	free(text);
-
-	return (total_written);
+	a = read(f, t, letters);
+	if (a == -1)
+	{
+		free(t);
+		close(f);
+		return (0);
+	}
+	b = write(STDOUT_FILENO, t, a);
+	if (b == -1 || b != a)
+	{
+		free(t);
+		close(f);
+		return (0);
+	}
+	free(t);
+	close(f);
+	return (a);
 }
+
