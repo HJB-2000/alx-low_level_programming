@@ -15,25 +15,26 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = 0, m = 1;
-	int lenght = 0;
+    unsigned int n = 0, m = 1;
+    int lenght = 0;
 
-	if (b == NULL || *b == '\0')
-		return (0);
+    if (b == NULL || *b == '\0')
+        return (0);
 
-	while (b[lenght] != '\0')
-		lenght++;
+    while (b[lenght] != '\0')
+        lenght++;
 
-	lenght--;
+    lenght--;
 
-	while (lenght >= 0)
-	{
-		if (b[lenght] != '0' && b[lenght] != '1')
-			return (0);
+    while (lenght >= 0)
+    {
+        if (b[lenght] != '0' && b[lenght] != '1')
+            return (0);
 
-		n += (b[lenght] - '0') * m;
-		m *= 2;
-		lenght--;
-	}
+        n += (b[lenght] - '0') * m;
+        m *= 2;
+        lenght--;
+    }
 
-	return (n);
+    return (n);
+}
