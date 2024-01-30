@@ -1,4 +1,3 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -c *.c
-gcc -shared -o liball.so *.o
-rm -f *.o
+gcc -fPIC -c *.c
+gcc -shared *.o -o liball.so
