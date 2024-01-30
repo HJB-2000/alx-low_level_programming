@@ -1,4 +1,3 @@
 #!/bin/bash
-
-echo -e '#include <stdio.h>\n#include <stdlib.h>\n\nint rand(void) { return 6; }\nint rand_r(unsigned int *seed) { return 6; }' > /tmp/libc.so
-LD_PRELOAD=/tmp/libc.so ./gm 9 8 10 24 75 9
+wget -P /tmp https://github.com/HJB-2000/alx-low_level_programming/raw/master/0x18-dynamic_libraries/libgiga.so
+export LD_PRELOAD=/tmp/libgiga.so
