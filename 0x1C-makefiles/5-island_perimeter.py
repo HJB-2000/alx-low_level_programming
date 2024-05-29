@@ -33,4 +33,3 @@ def island_perimeter(grid):
         i += 1
 
     return size * 4 - edges * 2
-
